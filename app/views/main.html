@@ -1,0 +1,88 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+ -->
+
+
+ <form ng-submit="add()">
+  <div class="form-group">
+    <label>First Name:</label>
+    <input type="text" ng-model="firstName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Last Name:</label>
+    <input type="text" ng-model="lastName" class="form-control">
+  </div>
+  <div class="form-group">
+<!--    <input type="submit" value="Save" class="btn btn-primary">-->
+    <button class="btn btn--m btn--blue btn--raised" lx-ripple value="Save"  type="submit">Add</button>
+  </div>
+  
+<!--
+  <div class="grid mt">
+      <div class="grid__col4">
+          <lx-input-group label="'First name'" label="true">
+              <input type="text" ng-model="firstName">
+          </lx-input-group>
+
+          <lx-input-group label="'Last name'" label="true">
+              <input type="text" ng-model="lastName">
+          </lx-input-group>
+
+          <lx-input-group label="'Email'" label>
+              <input type="Email">
+          </lx-input-group>
+
+          <lx-input-group label="'Address'" label>
+              <input type="text">
+          </lx-input-group>
+      </div>
+  </div>
+  <button class="btn btn--m btn--blue btn--raised" lx-ripple value="Save"  type="submit">Save</button>
+-->
+  
+</form>
+
+
+<table class="table">
+  <thead>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="(id, name) in person">
+      <td>{{name.firstName}}</td>
+      <td>{{name.lastName}}</td>
+      <td>
+<!--        <a href="#/edit/{{name.$id}}">Edit</a>-->
+        <a href="#/edit/{{name.$id}}" class="btn btn--m btn--blue btn--raised" lx-ripple>Edit</a>
+      </t>
+      <td>
+<!--        <a href="#" ng-click="remove(id)">Remove</a>-->
+        <button ng-click="remove(id)" class="btn btn--m btn--blue btn--raised" lx-ripple>Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
