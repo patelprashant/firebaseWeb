@@ -18,6 +18,7 @@ angular
     'ngTouch',
     'firebase',
     'lumx',
+    'lumx.notification'
   ])
   .config(function ($routeProvider) {
     $routeProvider

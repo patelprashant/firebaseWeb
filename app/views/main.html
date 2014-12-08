@@ -79,7 +79,7 @@
       <th>&nbsp;</th>
     </thead>
     <tbody>
-      <tr ng-repeat="(id, name) in person | filter:search | orderBy: 'firstName'">
+      <tr ng-repeat="(id, name) in person | filter:search">
         <td>{{name.firstName}}</td>
         <td>{{name.lastName}}</td>
         <td>

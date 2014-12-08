@@ -8,7 +8,7 @@
  * Controller of the firebaseWebApp
  */
 angular.module('firebaseWebApp')
-  .controller('MainCtrl', function ($scope, $firebase) {
+  .controller('MainCtrl', function ($scope, $firebase, LxNotificationService) {
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
     //   'AngularJS',
@@ -30,23 +30,34 @@ angular.module('firebaseWebApp')
 
       if(save){
         console.log('Pass: Saved Successfully');
+        LxNotificationService.success('Added Successfully');
       }
       else{
         console.log('Faild: Something wrong went');
+        LxNotificationService.error('Something went wrong');
       }
     };
+  
+//    $scope.notify = function(type){
+//      if(type == 'success'){
+//        LxNotificationService.success('Saved Successfully');
+//      }
+//    }
+    
 
     $scope.remove = function(id){
       Person.$remove(id);
+      LxNotificationService.warning('Removed Successfully');
     }
   })
-  .controller('EditCtrl', function($scope, $location, $routeParams, $firebase){
+  .controller('EditCtrl', function($scope, $location, $routeParams, $firebase, LxNotificationService){
     var fbURL = "https://blistering-heat-3711.firebaseio.com/Contacts/";
     var personURL = new Firebase(fbURL + $routeParams.id);
     $scope.person = $firebase(personURL).$asObject();
 
     $scope.edit = function(){
       $scope.person.$save();
-      $location.path('/')
+      LxNotificationService.success('Saved Successfully');
+      $location.path('/');
     }
   });
