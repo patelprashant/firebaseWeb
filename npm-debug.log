@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'foundation' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose cache add [ 'foundation', null ]
+6 verbose cache add name=undefined spec="foundation" args=["foundation",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'foundation',
+7 verbose parsed url   path: 'foundation',
+7 verbose parsed url   href: 'foundation' }
+8 silly lockFile ec9624c8-foundation foundation
+9 verbose lock foundation C:\Users\prashantchandrap\AppData\Roaming\npm-cache\ec9624c8-foundation.lock
+10 silly lockFile ec9624c8-foundation foundation
+11 silly lockFile ec9624c8-foundation foundation
+12 verbose addNamed [ 'foundation', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 604530e7-foundation foundation@
+15 verbose lock foundation@ C:\Users\prashantchandrap\AppData\Roaming\npm-cache\604530e7-foundation.lock
+16 silly addNameRange { name: 'foundation', range: '*', hasData: false }
+17 verbose request where is /foundation
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 1b6123d34633ec2b
+20 verbose url raw /foundation
+21 verbose url resolving [ 'https://registry.npmjs.org/', './foundation' ]
+22 verbose url resolved https://registry.npmjs.org/foundation
+23 verbose request where is https://registry.npmjs.org/foundation
+24 info trying registry request attempt 1 at 15:25:00
+25 http GET https://registry.npmjs.org/foundation
+26 http 200 https://registry.npmjs.org/foundation
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Mon, 08 Dec 2014 04:25:01 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"ACWRGBKJ2JIJ1QORZOY4L3450"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '166746',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-syd1621-SYD',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1418012701.044727,VS0,VE475',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'foundation', range: '*', hasData: true }
+29 silly addNameRange versions [ 'foundation',
+29 silly addNameRange   [ '4.0.0-wip',
+29 silly addNameRange     '4.1.1',
+29 silly addNameRange     '4.1.1-s1',
+29 silly addNameRange     '4.1.1-s2',
+29 silly addNameRange     '4.1.2',
+29 silly addNameRange     '4.1.2-stylus1',
+29 silly addNameRange     '4.1.2-stylus2',
+29 silly addNameRange     '4.1.3',
+29 silly addNameRange     '4.1.5',
+29 silly addNameRange     '4.1.5-1',
+29 silly addNameRange     '4.1.5-2',
+29 silly addNameRange     '4.1.6',
+29 silly addNameRange     '4.1.6-1',
+29 silly addNameRange     '4.1.6-2',
+29 silly addNameRange     '4.1.6-3',
+29 silly addNameRange     '4.1.6-4',
+29 silly addNameRange     '4.1.6-5',
+29 silly addNameRange     '4.2.1',
+29 silly addNameRange     '4.2.1-1' ] ]
+30 verbose addNamed [ 'foundation', '4.2.1-1' ]
+31 verbose addNamed [ '4.2.1-1', '4.2.1-1' ]
+32 silly lockFile e0e19287-foundation-4-2-1-1 foundation@4.2.1-1
+33 verbose lock foundation@4.2.1-1 C:\Users\prashantchandrap\AppData\Roaming\npm-cache\e0e19287-foundation-4-2-1-1.lock
+34 silly lockFile c59a001f-oundation-foundation-4-2-1-1-tgz https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+35 verbose lock https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz C:\Users\prashantchandrap\AppData\Roaming\npm-cache\c59a001f-oundation-foundation-4-2-1-1-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz',
+36 verbose addRemoteTarball   '4e497e2d9737533334b1e68354cd8dd039cbc47b' ]
+37 info retry fetch attempt 1 at 15:25:01
+38 verbose fetch to= C:\Users\PRASHA~1\AppData\Local\Temp\npm-11372-09dpf8wX\registry.npmjs.org\foundation\-\foundation-4.2.1-1.tgz
+39 http GET https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+40 http 400 https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+41 error fetch failed https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+42 silly lockFile c59a001f-oundation-foundation-4-2-1-1-tgz https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+43 silly lockFile c59a001f-oundation-foundation-4-2-1-1-tgz https://registry.npmjs.org/foundation/-/foundation-4.2.1-1.tgz
+44 silly lockFile e0e19287-foundation-4-2-1-1 foundation@4.2.1-1
+45 silly lockFile e0e19287-foundation-4-2-1-1 foundation@4.2.1-1
+46 silly lockFile 604530e7-foundation foundation@
+47 silly lockFile 604530e7-foundation foundation@
+48 error Error: 400 Bad Request
+48 error     at WriteStream.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\fetch.js:58:12)
+48 error     at WriteStream.emit (events.js:117:20)
+48 error     at evalmachine.<anonymous>:1609:14
+48 error     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:102:5
+48 error     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+49 error If you need help, you may report this *entire* log,
+49 error including the npm and node versions, at:
+49 error     <http://github.com/npm/npm/issues>
+50 error System Windows_NT 6.1.7601
+51 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "foundation"
+52 error cwd C:\Workspace\nodeJsStuff\firebaseWeb
+53 error node -v v0.10.33
+54 error npm -v 1.4.28
+55 verbose exit [ 1, true ]
