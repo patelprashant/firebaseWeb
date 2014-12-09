@@ -30,7 +30,7 @@ angular.module('firebaseWebApp')
 
       if(save){
         console.log('Pass: Saved Successfully');
-        LxNotificationService.success('Added Successfully');
+        LxNotificationService.success('Added');
       }
       else{
         console.log('Faild: Something wrong went');
@@ -38,16 +38,9 @@ angular.module('firebaseWebApp')
       }
     };
   
-//    $scope.notify = function(type){
-//      if(type == 'success'){
-//        LxNotificationService.success('Saved Successfully');
-//      }
-//    }
-    
-
     $scope.remove = function(id){
       Person.$remove(id);
-      LxNotificationService.warning('Removed Successfully');
+      LxNotificationService.warning('Removed');
     }
   })
   .controller('EditCtrl', function($scope, $location, $routeParams, $firebase, LxNotificationService){
@@ -57,7 +50,7 @@ angular.module('firebaseWebApp')
 
     $scope.edit = function(){
       $scope.person.$save();
-      LxNotificationService.success('Saved Successfully');
+      LxNotificationService.success('Saved');
       $location.path('/');
     }
   });
