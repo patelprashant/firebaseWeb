@@ -17,7 +17,7 @@ AngularFire is the officially supported AngularJS binding for Firebase. This bin
 
 ## Contact
 
-Submit questions or bugs using the [issue tracker](https://github.com/patelprashant/firebaseWeb). For Firebase-releated questions, try the [mailing list](https://groups.google.com/forum/#!forum/firebase-talk).
+Submit questions or bugs using the [issue tracker](https://github.com/patelprashant/firebaseWeb/issues). For Firebase-releated questions, try the [mailing list](https://groups.google.com/forum/#!forum/firebase-talk).
 
 ## License
 

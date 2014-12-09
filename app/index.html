@@ -24,9 +24,9 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/schedule">Schedule</a></li>
+        <ul class="nav nav-pills pull-right" ng-controller="navCtrl">
+          <li ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{ active: isActive('/schedule')}"><a ng-href="#/schedule">Schedule</a></li>
 <!--          <li><a ng-href="#">Contact</a></li>-->
         </ul>
         <h3 class="text-muted">Firebase - Playground</h3>
@@ -83,6 +83,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/schedule.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
         <!-- endbuild -->
 </body>
 </html>
