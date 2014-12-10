@@ -53,24 +53,22 @@ angular.module('firebaseWebApp')
       $location.path('/');
     }
   })
-  .directive('capitalizeFirst', function ($parse) {
+  .directive('firstCapital', function ($parse) {
     return {
       require: 'ngModel',
       link: function (scope, element, attrs, modelCtrl) {
-        var capitalize = function (inputValue) {
-          if (inputValue === undefined) {
-            inputValue = '';
-          }
-          var capitalized = inputValue.charAt(0).toUpperCase() +
-            inputValue.substring(1);
-          if (capitalized !== inputValue) {
+        
+        var capitalize = function (inputText) {
+
+          var capitalized = inputText.charAt(0).toUpperCase() + inputText.substring(1); //first letter only
+          
+          if (capitalized !== inputText) {
             modelCtrl.$setViewValue(capitalized);
             modelCtrl.$render();
           }
           return capitalized;
         }
         modelCtrl.$parsers.push(capitalize);
-        capitalize($parse(attrs.ngModel)(scope)); // capitalize initial value
       }
     };
   });
