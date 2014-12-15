@@ -13,6 +13,7 @@
     "angular-touch": "~1.2.0",
     "angular-route": "~1.2.0",
     "angularfire": "~0.9.0",
+    "ngstorage": "~0.3.0",
     "lumx": "~0.1.15"
   },
   "devDependencies": {

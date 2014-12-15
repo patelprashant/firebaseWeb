@@ -16,9 +16,10 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ngStorage',
     'firebase',
     'lumx',
-    'lumx.notification'
+    'lumx.notification',
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,6 +34,10 @@ angular
       .when('/edit/:id', {
         templateUrl: 'views/edit.html',
         controller: 'EditCtrl'
+      })
+      .when('/storagetest', {
+        templateUrl: 'views/storagetest.html',
+        controller: 'StoragetestCtrl'
       })
       .otherwise({
         redirectTo: '/'

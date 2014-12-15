@@ -9,11 +9,6 @@
  */
 angular.module('firebaseWebApp')
   .controller('MainCtrl', function ($scope, $firebase, LxNotificationService) {
-    // $scope.awesomeThings = [
-    //   'HTML5 Boilerplate',
-    //   'AngularJS',
-    //   'Karma'
-    // ];
     var ref = new Firebase("https://blistering-heat-3711.firebaseio.com/Contacts");
     var Person = $firebase(ref).$asArray();
 
